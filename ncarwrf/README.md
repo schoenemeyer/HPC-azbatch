@@ -1,14 +1,14 @@
-# How to run Linpack with azbatch ?
+# How to run WRF 3.8.1 with azbatch ?
 
 After cloning the repo, change directory to the linpack subdir and execute these steps
 
-## Download HPL
+## Download WRF
 
 Download the HPL binaries from our storage by running these command
 
-    ~/HPC-azbatch/linpack$ wget "https://azcathpcsane.blob.core.windows.net/apps/hpl.tgz?sv=2017-04-17&si=read&sr=c&sig=%2BKP1aEa0ciOyckj11PxDlqoYfiXQKDhDOaJSwkbzCig%3D" -O hpl.tgz
+    ~/HPC-azbatch/ncarwrf$ wget "https://hpccenth2lts.blob.core.windows.net/wrf/wrf.zip" -O wrf.zip
     
-    ~/HPC-azbatch/linpack$ tar xvf hpl.tgz
+    ~/HPC-azbatch/ncarwrf$ tar xvf hpl.tgz
 
 
 ## Update **params.tpl**
