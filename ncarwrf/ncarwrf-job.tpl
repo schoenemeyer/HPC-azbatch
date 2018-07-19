@@ -1,0 +1,10 @@
+jobscript=ncarwrf.sh
+coordinationscript=ncarwrf-coordination.sh
+job_id=ncarwrf
+job_type=mpijob
+numnodes=$1
+ppn=16
+coordination='bash $AZ_BATCH_TASK_SHARED_DIR/'${coordinationscript}
+commandline='bash $AZ_BATCH_TASK_WORKING_DIR/'${jobscript}' '$numnodes' '$ppn
+jobenvsettings='[{"name":"ANALYTICS_WORKSPACE", "value":""},{"name":"ANALYTICS_KEY", "value":""}]'
+input_dir=
