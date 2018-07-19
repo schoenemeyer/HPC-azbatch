@@ -69,8 +69,7 @@ and then run
       min:         0.711050
       sum:       114.137140
      mean:         0.766021
- mean/max:         0.580900
-
+    mean/max:         0.580900
 
 
 ## Monitor your job
