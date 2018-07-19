@@ -70,8 +70,7 @@ and then run
       sum:       114.137140
      mean:         0.766021
     mean/max:         0.580900
-you can compare this performance with the figure presented in this repository: https://github.com/schoenemeyer/WRF3.8-in-Azure/blob/master/README.md
-In this case we measure 72 sec / 0.766 sec per time step = 94 (simulation speed)
+you can compare this performance with the figure presented in this repository https://github.com/schoenemeyer/WRF3.8-in-Azure/blob/master/README.md ; in our case we measure 72 sec / 0.766 sec per time step = 94 (simulation speed) on two nodes (H16r).
 
 ## Monitor your job
 
