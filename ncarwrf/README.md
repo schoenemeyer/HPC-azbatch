@@ -60,6 +60,17 @@ and then run
 
 
     ../05-createjob.sh params.tpl ncarwrf-job.tpl <nbnodes>
+    
+    The output of the statistics (stats_<numberofcores>.out will be copied to the storage_account_name in the container folder ncarwrf
+    
+    ---
+    items:       149
+      max:         1.318680
+      min:         0.711050
+      sum:       114.137140
+     mean:         0.766021
+ mean/max:         0.580900
+
 
 
 ## Monitor your job
