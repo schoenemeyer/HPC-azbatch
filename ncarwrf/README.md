@@ -78,6 +78,6 @@ Use [Batch Labs](https://azure.github.io/BatchLabs/) to monitor your pools and j
 
 ## Monitor your job
 
-The zip file contains all binares for WRF. WRF was compiled with gcc 5.3.1 as well as the netcdf library. The Intel MPI Library Version 2018.1.163 was used. Inputdata (restart files and boundary data ) are automatically downloaded before the run starts.
+The zip file contains all binaries for WRF. WRF was compiled with gcc 5.3.1 as well as the netcdf library. The Intel MPI Library Version 2018.1.163 was used. Inputdata (restart files and boundary data ) are automatically downloaded before the run starts.
 
 
