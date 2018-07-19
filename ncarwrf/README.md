@@ -1,10 +1,10 @@
 # How to run WRF 3.8.1 with azbatch ?
 
-After cloning the repo, change directory to the linpack subdir and execute these steps
+After cloning the repo, change directory to the ncarwrf subdir and execute these steps
 
 ## Download WRF
 
-Download the HPL binaries from our storage by running these command
+Download the wrf.zip file with binaries and libraries from our storage by running these command
 
     ~/HPC-azbatch/ncarwrf$ wget "https://hpccenth2lts.blob.core.windows.net/wrf/wrf.zip" -O wrf.zip
     
@@ -28,13 +28,13 @@ When using several azure accounts you can use `az account list` to list the acco
     ../00-login.sh params.tpl
 
 
-## Create the HPL application package
+## Create the WRF application package
 
 
-    ../01-createapppackage.sh params.tpl hpl.tpl
+    ../01-createapppackage.sh params.tpl wrf.tpl
 
 
-## Create the HPL Node Pool
+## Create the WRF Node Pool
 
     ../02-createpool.sh params.tpl ../pool-template.json
 
@@ -50,16 +50,14 @@ When using several azure accounts you can use `az account list` to list the acco
 
 ## Create the job. You can run this command multiple time
 
-In the __linpack-job.tpl__ file update these values to reflect the number of nodes you want to run on :
+In the __ncarwrf-job.tpl__ file update these values to reflect the number of nodes you want to run on :
 
-* **hpl_MEM_GB** : This is the memory in GB used on each node. The HPL problem size will be calculated from it. 
-* **hpl_P** and **hpl_P** : choose P & Q so that `PxQ = numnodes*ppn` ,
-* **hpl_NB** : Block size. See the readme.txt inside the hpl package for details.
+
 
 and then run
 
 
-    ../05-createjob.sh params.tpl linpack-job.tpl <nbnodes>
+    ../05-createjob.sh params.tpl ncarwrf-job.tpl <nbnodes>
 
 
 ## Monitor your job
