@@ -36,4 +36,4 @@ if [ -n "$ANALYTICS_WORKSPACE" ]; then
     bash $hpl_dir/linpack_telemetry.sh ../stdout.txt $NUMNODES $PPN
     bash $hpl_dir/upload_log_analytics.sh $ANALYTICS_WORKSPACE LinpackMetrics $ANALYTICS_KEY telemetry.json
 fi
-az storage blob upload --account-name hpccenth2lts --account-key jOGHrYkDyrGV/EYJBgxATvRr0gCrCL0nqwKzakdzeOeWeG7xlAq1dR6vDw8UoMNLA/zBtqHxKpDGpdicwEm9Ig==  --file ./stats_$NP.out -c wrf -n stats_$NP.out
+az storage blob upload --account-name hpccenth2lts --account-key j.................icwEm9Ig==  --file ./stats_$NP.out -c wrf -n stats_$NP.out
