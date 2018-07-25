@@ -38,7 +38,7 @@ When using several azure accounts you can use `az account list` to list the acco
 
 ## Create the WRF Node Pool
 
-    ../02-createpool.sh params.tpl ../pool-template.json
+    ../02-createpool.sh params.tpl 
 
 
 ## Set the pool to use nodeprep.sh at startup
