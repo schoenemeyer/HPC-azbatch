@@ -6,6 +6,9 @@ After cloning the repo, change directory to the ncarwrf subdir and execute these
 
 Download the wrf.zip file with binaries and libraries from our storage by running these command
 
+    ~/HPC-azbatch$ chmod +x *.sh
+    cp params.tpl ncarwrf
+    cd ncarwrf
     ~/HPC-azbatch/ncarwrf$ mkdir wrf 
     ~/HPC-azbatch/ncarwrf$ cd wrf 
     ~/HPC-azbatch/ncarwrf$ wget "https://hpccenth2lts.blob.core.windows.net/wrf/wrf.zip" -O wrf.zip
